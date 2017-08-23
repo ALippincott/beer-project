@@ -5,22 +5,21 @@
 	<meta charset="UTF-8">
 	<meta content="initial-scale=1" name="viewport">
 
-	<title>
-	</title>
+	<title>Beer Saver</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js">
 	</script>
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"><!-- <link rel="stylesheet" href="css/styles.css"> -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"><link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
 	<div class="container">
-		<section class="row" id="car-project">
+		<section class="row" id="beer-project">
 			<header class="header">
-				<h1 class="text-center">Car Project</h1>
+				<h1 class="text-center">Beer Saver</h1>
 
 
 				<section id="search-ui">
-					<input class="bottom-spacing" id="search-bar" placeholder="Search for cars" type="text"> <button class="btn bottom-spacing" id="search-btn">Search</button>
+					<input class="bottom-spacing" id="search-bar" placeholder="Search for beers" type="text"> <button class="btn bottom-spacing" id="search-btn">Search</button>
 				</section>
 			</header>
 
@@ -34,27 +33,6 @@
 			</section>
 
 
-			<section class="col-md-6" id="user-list">
-				<table class="table-responsive fullspan" id="user-select">
-				</table>
-				<!-- search results template -->
-				<script id="search-results-template" type="text/template">
-
-				        <td><%= name %></td>
-				        <td><%= brand %></td>
-				        <td><%= calories %> kcal</td>
-				        <td><button class="add btn">Add</button></td>
-
-				</script> <!-- user select template -->
-				 
-				<script id="user-select-template" type="text/template">
-
-				        <td><%= name %></td>
-				        <td><%= brand %></td>
-				        <td><%= calories %> kcal</td>
-				        <td><button class="destroy btn">Remove</button></td>
-
-				</script> 
 				<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js">
 				</script> 
 				<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js">
