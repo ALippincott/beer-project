@@ -1,26 +1,67 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="initial-scale=1">
-	<title></title>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	<!-- <link rel="stylesheet" href="css/styles.css"> -->
+	<meta content="initial-scale=1" name="viewport">
+
+	<title>
+	</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js">
+	</script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"><!-- <link rel="stylesheet" href="css/styles.css"> -->
 </head>
+
 <body>
 	<div class="container">
-		<section id="car-project" class="row">
-		<header class="header">
-			<h1 class="text-center">Car Project</h1>
+		<section class="row" id="car-project">
+			<header class="header">
+				<h1 class="text-center">Car Project</h1>
+
+
 				<section id="search-ui">
-					<input type="text" id="search-bar" class="bottom-spacing" placeholder="Search for cars">
-					<button id="search-btn" class="btn bottom-spacing">Search</button>
+					<input class="bottom-spacing" id="search-bar" placeholder="Search for cars" type="text"> <button class="btn bottom-spacing" id="search-btn">Search</button>
 				</section>
 			</header>
-	
 
-	<!-- <script src="js/main.js"></script> -->
 
+			<section class="col-md-6" id="results">
+				<h3 class="text-center">Search Results</h3>
+
+
+				<table class="table-responsive fullspan" id="search-results">
+				</table>
+			</section>
+
+
+			<section class="col-md-6" id="user-list">
+				<table class="table-responsive fullspan" id="user-select">
+				</table>
+				<!-- search results template -->
+				<script id="search-results-template" type="text/template">
+
+				        <td><%= name %></td>
+				        <td><%= brand %></td>
+				        <td><%= calories %> kcal</td>
+				        <td><button class="add btn">Add</button></td>
+
+				</script> <!-- user select template -->
+				 
+				<script id="user-select-template" type="text/template">
+
+				        <td><%= name %></td>
+				        <td><%= brand %></td>
+				        <td><%= calories %> kcal</td>
+				        <td><button class="destroy btn">Remove</button></td>
+
+				</script> 
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js">
+				</script> 
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js">
+				</script> <!-- <script src="js/main.js"></script> -->
+				 
+			</section>
+		</section>
+	</div>
 </body>
 </html>
