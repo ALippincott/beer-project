@@ -19,17 +19,20 @@
 
 
 				<section id="search-ui">
-					<input class="bottom-spacing" id="search-bar" placeholder="Search for beers" type="text"> <button class="btn bottom-spacing" id="search-btn">Search</button>
+					<input type="text" 
+         				ng-model="search" 
+         				ng-model-options="{ debounce: 800 }"
+        				placeholder="Search for a beer" /> 
+        				<button class="btn bottom-spacing" id="search-btn">Search</button>
 				</section>
 			</header>
 
 
 			<section class="col-md-6" id="results">
 				<h3 class="text-center">Search Results</h3>
-
-
-				<table class="table-responsive fullspan" id="search-results">
-				</table>
+				<div id="main-info" 
+    				ng-include="'partials/main-info.html'">
+				</div>
 			</section>
 
 
