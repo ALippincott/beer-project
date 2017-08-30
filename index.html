@@ -19,7 +19,7 @@
 
 				<div ng-app="myApp" ng-controller="myCtrl">
 					<p>Select a Movie:</p>
-					<select ng-model="selectedMovie" ng-options="x.title for x in movies">
+					<select class="bright" ng-model="selectedMovie" ng-options="x.title for x in movies">
 					</select>
 
 					<h1>You selected: {{selectedMovie.title}}</h1>
