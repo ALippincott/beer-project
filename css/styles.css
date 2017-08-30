@@ -2,7 +2,7 @@ body {
 	width: 100%;
 	height: 100%;
 	font-family: 'Encode Sans', sans-serif;
-	background-color: #554D00;
+	background-color: #550F00;
 	color:#FFF7AA;
 }
 
@@ -13,5 +13,5 @@ body {
 }
 
 .bright{
-color:#554D00;
+color:black;
 }
