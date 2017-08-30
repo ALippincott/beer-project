@@ -3,10 +3,11 @@ body {
 	height: 100%;
 	font-family: 'Encode Sans', sans-serif;
 	background-color: #f76072;
+	color:#f4d742;
 }
 
 .title{
-	font-size: 50px;
+	font-size: 70px;
 	font-weight: bold;
 	margin-bottom: 20px;
 }

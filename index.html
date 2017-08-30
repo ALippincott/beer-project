@@ -13,31 +13,21 @@
 
 <body>
 	<div class="container">
-		<section class="row" id="beer-project">
+		<section class="row" id="movie-project">
 			<header class="header">
-				<h1 class="text-center">Movie Saver</h1>
+				<h1 class="text-center title">Popular Movies</h1>
 
+				<div ng-app="myApp" ng-controller="myCtrl">
+					<p>Select a Movie:</p>
+					<select ng-model="selectedMovie" ng-options="x.title for x in movies">
+					</select>
 
-				<section id="search-ui">
-					<input type="text" 
-         				ng-model="search" 
-         				ng-model-options="{ debounce: 800 }"
-        				placeholder="Search for a Movie" /> 
-        				<button class="btn bottom-spacing" id="search-btn">Search</button>
-				</section>
-			</header>
-
-
-			<section class="col-md-6" id="results">
-				<h3 class="text-center">Search Results</h3>
-				<div id="main-info" 
-    				ng-include="'partials/main-info.html'">
+					<h1>You selected: {{selectedMovie.title}}</h1>
+					<p>Overview: {{selectedMovie.overview}}</p>
+					<p>Release Date: {{selectedMovie.release_date}}</p>
+					 <img ng-src="{{selectedMovie.poster}}">
 				</div>
 
-				<div id="related-results" 
-    				ng-include="'partials/related-results.html'">
-				</div>
-			</section>
 
 
 				<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js">
